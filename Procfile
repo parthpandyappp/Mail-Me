@@ -1,1 +1,1 @@
-web: gunicorn khushal2.wsgi
+web: gunicorn emailman.wsgi

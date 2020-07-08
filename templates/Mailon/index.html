@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Mail-Me</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+	<link rel='stylesheet' href="{% static 'css/style.min.css' %}" />
+	<link rel="shortcut icon" href="{% static 'images/plane.svg' %}" />
+</head>
+<body>
+	<!-- navbar -->
+	<div class="w3-bar w3-border w3-card-4 w3-light-grey w3-top">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="#" class="navbar__logo" style="font-family: Lucida Console, Courier, monospace;">Mail-Me</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="https://github.com/parthpandyappp" style="font-family: Lucida Console, Courier, monospace;">Github</a></li>
+						<li><a href="https://parthpandyappp.github.io/" style="font-family: Lucida Console, Courier, monospace;">About me</a></li>
+					</ul>
+				</nav>
+
+
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+		</div>
+	</div>
+	<!-- Authentication pages -->
+	<div class="auth">
+		<div class="container">
+			<div class="auth__inner">
+				<div class="auth__media">
+					<img src="{% static 'images/email.svg' %}">
+				</div>
+				<div class="auth__auth">
+					<h1 class="auth__title">Mail-Me</h1>
+					<p>One stop, send emails to Parth!</p>
+					<div class="alert">Your message has been submitted.</div>
+					<form class="form" action="/process/" method="POST" id="contactform">
+						{% csrf_token %}
+						<label style="font-size: large;">Subject</label>
+						<input type="text" name="subject" id="name" placeholder="subject for email"required>
+						<label style="font-size: large;">From --email-Id</label>
+						<input type="email" name="to_email" id='email' placeholder="you@example.com"required>
+						<label style="font-size: large;">Your Message</label>
+						<textarea type="text" name="message" placeholder="Enter your message here" id="textarea"required></textarea>
+						<button type='submit' class="button button__accent">Send Email</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script src="js/main.min.js"></script>
+<script src='js/app.min.js'></script>
+            <center >
+		<p>MADE WITH  <i class="material-icons" style="color:red;">favorite</i>   BY PARTH PANDYA.</p>
+		<p>Copyright &copy;<script type="text/javascript"> document.write(new Date().getFullYear());</script>  PARTH PANDYA . ALL  RIGHTS  RESERVED.</p>
+							
+	    </center>
+</body>
+</html>

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Mail-Me</title>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
 	<link rel='stylesheet' href="{% static 'css/style.min.css' %}" />
 	<link rel="shortcut icon" href="{% static 'images/plane.svg' %}" />
@@ -39,7 +40,8 @@
 					<img src="{% static 'images/email.svg' %}" style="width: 100%;" >
 				</div>
 				<div class="auth__auth">
-					<h1 class="auth__title">Mail-Me</h1>
+					<h1 class="auth__title" style="font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif; color: #2b2b2b;   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+">Mail-Me</h1>
 					<p>One stop, send emails to Parth!</p>
 					<div class="alert">Your message has been submitted.</div>
 					<form class="form" action="/process/" method="POST" id="contactform">

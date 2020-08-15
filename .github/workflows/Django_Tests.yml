@@ -56,8 +56,7 @@ jobs:
               login parthpandyappp@gmail.com
               password $HEROKU_API_KEY
           EOF
-      run: heroku git:remote -a $(basename $GITHUB_REPOSITORY)
-      run: git push heroku HEAD:refs/heads/master
-      run: heroku run "POOL_SIZE=2 mix ecto.migrate"
-
-    
+          heroku git:remote -a $(basename $GITHUB_REPOSITORY)
+          git push heroku HEAD:refs/heads/master
+          heroku run "POOL_SIZE=2 mix ecto.migrate"
+      

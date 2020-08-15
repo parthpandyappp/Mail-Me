@@ -42,7 +42,7 @@ jobs:
     - name: Run tests
       run: python manage.py test
       
-    - uses: parthpandyappp/heroku-deploy@master
+    - uses: parthpandyappp/Mail-Me@master
       with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "emailman"

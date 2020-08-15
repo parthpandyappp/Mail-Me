@@ -48,14 +48,16 @@ jobs:
         HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
         HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
       run: |
+          heroku login
+          cat >~/.netrc <<EOF
           machine api.heroku.com
-              login parthpandyappp@gmail.com
+              login $HEROKU_EMAIL
               password $HEROKU_API_KEY
           machine git.heroku.com
-              login parthpandyappp@gmail.com
+              login $HEROKU_EMAIL
               password $HEROKU_API_KEY
-          
-          heroku git:remote -a emailman
+              
+          heroku git:remote -a $(basename $GITHUB_REPOSITORY)
           git push heroku HEAD:refs/heads/master
   
       

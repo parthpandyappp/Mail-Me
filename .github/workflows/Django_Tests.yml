@@ -56,7 +56,7 @@ jobs:
               login $HEROKU_EMAIL
               password $HEROKU_API_KEY
           EOF    
-          heroku git:remote -a $(basename $GITHUB_REPOSITORY)
+          heroku git:remote -a $HEROKU_APP_NAME
           git push heroku HEAD:refs/heads/master
   
       

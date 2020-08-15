@@ -47,16 +47,15 @@ jobs:
       env:
         HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
         HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
-      run: |+
-          cat >~/.netrc <<EOF
+      run: |
           machine api.heroku.com
               login parthpandyappp@gmail.com
               password $HEROKU_API_KEY
           machine git.heroku.com
               login parthpandyappp@gmail.com
               password $HEROKU_API_KEY
-          EOF
-          heroku git:remote -a $(basename $GITHUB_REPOSITORY)
+          
+          heroku git:remote -a emailman
           git push heroku HEAD:refs/heads/master
-          heroku run "POOL_SIZE=2 mix ecto.migrate"
+  
       

@@ -48,6 +48,6 @@ jobs:
         HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
         HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
       if: github.ref == 'refs/heads/origin/master' && job.status == 'success'
-      run: git push https://heroku:300091e7-c2f7-4cdc-b85d-5202f18be31b@git.heroku.com/emailman.git origin/master:master
+      run: git push https://HEROKU_API_TOKEN@git.heroku.com/emailman.git origin/master:master
 
     

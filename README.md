@@ -6,7 +6,12 @@ This is a python based web-application written in Django:heartpulse:, which gene
 
 
 #### You can checkout my app at : https://emailman.herokuapp.com/
+
+#### Actions when passed should have the below status badge :
+![Triggering_Actions](https://github.com/parthpandyappp/mail-me/workflows/Triggering_Actions/badge.svg)
+
 ###### Any fruitful contributions are widely accepted.:heart:
+
 
 <p align="center"><a  href="https://dev.to/parthpandyappp">
   <img  src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Parth Pandya.'s DEV Profile" height="50" width="50">

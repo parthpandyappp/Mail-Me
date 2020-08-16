@@ -8,7 +8,7 @@ This is a python based web-application written in Django:heartpulse:, which gene
 #### You can checkout my app at : https://emailman.herokuapp.com/
 
 #### Actions when passed should have the below status badge :
-![Triggering_Actions](https://github.com/parthpandyappp/mail-me/workflows/Triggering_Actions/badge.svg)
+* ![Triggering_Actions](https://github.com/parthpandyappp/mail-me/workflows/Triggering_Actions/badge.svg)
 
 ###### Any fruitful contributions are widely accepted.:heart:
 

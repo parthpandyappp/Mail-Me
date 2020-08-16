@@ -4,6 +4,6 @@ This is a python based web-application written in Django:heartpulse:, which gene
 ### More on Django :diamond_shape_with_a_dot_inside:
 [Django](https://www.djangoproject.com/) is a Python-based free and open-source web framework that follows the model-view-controller architectural pattern. It is maintained by the Django Software Foundation, an American independent organization established as a 501 non-profit.
 
-[![Parth Pandya.'s DEV Profile](https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg)](https://dev.to/parthpandyappp)
+
 #### You can checkout my app at : https://emailman.herokuapp.com/
 ###### Any fruitful contributions are widely accepted.:heart:

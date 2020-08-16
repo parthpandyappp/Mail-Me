@@ -5,10 +5,10 @@ This is a python based web-application written in Django:heartpulse:, which gene
 [Django](https://www.djangoproject.com/) is a Python-based free and open-source web framework that follows the model-view-controller architectural pattern. It is maintained by the Django Software Foundation, an American independent organization established as a 501 non-profit.
 
 
-#### You can checkout my app at : https://emailman.herokuapp.com/
+* #### You can checkout my app at : https://emailman.herokuapp.com/
 
-#### Actions when passed should have the below status badge :
-* ![Triggering_Actions](https://github.com/parthpandyappp/mail-me/workflows/Triggering_Actions/badge.svg)
+* #### Actions when passed should have the below status badge :
+  ![Triggering_Actions](https://github.com/parthpandyappp/mail-me/workflows/Triggering_Actions/badge.svg)
 
 ###### Any fruitful contributions are widely accepted.:heart:
 
